@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Translations_TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Add text here..." textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LN1-JG-pwY">
+                                <rect key="frame" x="180" y="154" width="1560" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="7OX-Ir-VRp"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="r9g-6H-e1y">
+                                <rect key="frame" x="180" y="350" width="1560" height="620"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="PIH-Kt-B3v" detailTextLabel="nWa-ss-IYJ" rowHeight="100" style="IBUITableViewCellStyleSubtitle" id="ieY-up-DAk">
+                                        <rect key="frame" x="0.0" y="66" width="1560" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ieY-up-DAk" id="jyr-6m-vjn">
+                                            <rect key="frame" x="0.0" y="0.0" width="1560" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PIH-Kt-B3v">
+                                                    <rect key="frame" x="20" y="4" width="70" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nWa-ss-IYJ">
+                                                    <rect key="frame" x="20" y="50" width="125" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAo-9Z-rrp">
+                                <rect key="frame" x="853" y="244" width="214" height="86"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Convert"/>
+                                <connections>
+                                    <action selector="convertText:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="yGb-wh-BOe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funny Translations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcN-vZ-EeM">
+                                <rect key="frame" x="803" y="83" width="314" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="r9g-6H-e1y" secondAttribute="bottom" constant="50" id="9A7-JG-F3w"/>
+                            <constraint firstItem="LN1-JG-pwY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.35" id="9YS-ke-tfB"/>
+                            <constraint firstItem="r9g-6H-e1y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CNf-UT-Vtr"/>
+                            <constraint firstItem="FcN-vZ-EeM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SnN-zp-yXp"/>
+                            <constraint firstItem="LN1-JG-pwY" firstAttribute="top" secondItem="FcN-vZ-EeM" secondAttribute="bottom" constant="25" id="Sw0-vR-uL6"/>
+                            <constraint firstItem="RAo-9Z-rrp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bcv-sE-OJQ"/>
+                            <constraint firstItem="RAo-9Z-rrp" firstAttribute="top" secondItem="LN1-JG-pwY" secondAttribute="bottom" constant="20" id="dlx-Ic-5hJ"/>
+                            <constraint firstItem="LN1-JG-pwY" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="100" id="ehq-Mt-ZhZ"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="LN1-JG-pwY" secondAttribute="trailing" constant="100" id="fuH-z3-rCJ"/>
+                            <constraint firstItem="LN1-JG-pwY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="puE-tB-UiH"/>
+                            <constraint firstItem="r9g-6H-e1y" firstAttribute="top" secondItem="RAo-9Z-rrp" secondAttribute="bottom" constant="20" id="rhZ-vk-grV"/>
+                            <constraint firstItem="r9g-6H-e1y" firstAttribute="width" secondItem="LN1-JG-pwY" secondAttribute="width" id="ulr-Sf-QQ8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="convertButton" destination="RAo-9Z-rrp" id="YGE-rJ-NLv"/>
+                        <outlet property="tableView" destination="r9g-6H-e1y" id="IMk-Im-oph"/>
+                        <outlet property="textToTranslate" destination="LN1-JG-pwY" id="KbD-Cx-INE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-5"/>
+        </scene>
+    </scenes>
+</document>
